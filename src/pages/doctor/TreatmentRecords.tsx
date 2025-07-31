@@ -155,7 +155,7 @@ const DoctorTreatmentRecords = () => {
 
   // Filter records
   const filteredRecords = treatmentPlans.filter((record) => {
-    const matchesSearch = record.patientDetailName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    const matchesSearch = record.patientDetailName.includes(searchTerm.toLowerCase()) ||
       record.treatmentPlanId.toLowerCase().includes(searchTerm.toLowerCase()) ||
       record.method.toLowerCase().includes(searchTerm.toLowerCase());
     
