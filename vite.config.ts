@@ -6,18 +6,19 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/FE_hiemMuon/', // Thêm dòng này, thay bằng tên repo của bạn nếu khác
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-  },  server: {
+  },
+  server: {
     proxy: {
       '/api': {
         target: 'https://localhost:7147',
         changeOrigin: true,
         secure: false
-        // Bỏ hàm rewrite không cần thiết
       }
     }
   },
