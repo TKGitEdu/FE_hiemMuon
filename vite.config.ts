@@ -6,7 +6,7 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/FE_hiemMuon/', // Thêm dòng này, thay bằng tên repo của bạn nếu khác
+  // base: '/FE_hiemMuon/', // Thêm dòng này, thay bằng tên repo của bạn nếu khác
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
