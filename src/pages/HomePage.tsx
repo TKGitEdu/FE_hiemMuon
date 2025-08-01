@@ -21,21 +21,21 @@ const services = [
     title: "Thụ tinh trong tử cung (IUI)",
     description: "Phương pháp hỗ trợ sinh sản đơn giản, tinh trùng được đưa trực tiếp vào tử cung.",
     icon: <ClipboardCheck className="h-10 w-10 text-blue-600" />,
-    image: "/dist/anhchofehiemmuon/iuv-service.jpg"
+    image: "/anhchofehiemmuon/iuv-service.jpg"
   },
   {
     id: 2,
     title: "Thụ tinh trong ống nghiệm (IVF)",
     description: "Phương pháp thụ tinh trứng và tinh trùng trong môi trường phòng thí nghiệm.",
     icon: <ActivitySquare className="h-10 w-10 text-blue-600" />,
-    image: "/dist/anhchofehiemmuon/IVF.jpg"
+    image: "/anhchofehiemmuon/IVF.jpg"
   },
   {
     id: 3,
     title: "Bảo quản trứng và tinh trùng",
     description: "Dịch vụ bảo quản trứng và tinh trùng cho những người muốn trì hoãn việc có con.",
     icon: <BellRing className="h-10 w-10 text-blue-600" />,
-    image: "/dist/anhchofehiemmuon/baoquantrungtinhtrung.jpg"
+    image: "/anhchofehiemmuon/baoquantrungtinhtrung.jpg"
   }
 ];
 
@@ -45,7 +45,7 @@ const doctors = [
     id: 1,
     name: "TS. BS. Nguyễn Văn A",
     specialty: "Chuyên gia IVF",
-    image: "/dist/anhchofehiemmuon/isha.jpg",
+    image: "/anhchofehiemmuon/isha.jpg",
     rating: 4.9,
     reviews: 120
   },
@@ -53,7 +53,7 @@ const doctors = [
     id: 2,
     name: "PGS. TS. Trần Thị B",
     specialty: "Sản phụ khoa",
-    image: "/dist/anhchofehiemmuon/isha.jpg",
+    image: "/anhchofehiemmuon/isha.jpg",
     rating: 4.8,
     reviews: 95
   },
@@ -61,7 +61,7 @@ const doctors = [
     id: 3,
     name: "TS. BS. Lê Văn C",
     specialty: "Nội tiết sinh sản",
-    image: "/dist/anhchofehiemmuon/isha.jpg",
+    image: "/anhchofehiemmuon/isha.jpg",
     rating: 4.7,
     reviews: 88
   }
@@ -73,21 +73,21 @@ const blogs = [
     id: 1,
     title: "5 cách tự nhiên để cải thiện khả năng sinh sản",
     excerpt: "Các phương pháp tự nhiên có thể giúp cải thiện khả năng sinh sản...",
-    image: "/dist/anhchofehiemmuon/isha.jpg",
+    image: "/anhchofehiemmuon/isha.jpg",
     date: "10/06/2025"
   },
   {
     id: 2,
     title: "Hiểu về quy trình IVF: Từ chuẩn bị đến kết quả",
     excerpt: "Hướng dẫn chi tiết về quy trình thụ tinh trong ống nghiệm...",
-    image: "/dist/anhchofehiemmuon/isha.jpg",
+    image: "/anhchofehiemmuon/isha.jpg",
     date: "05/06/2025"
   },
   {
     id: 3,
     title: "Chế độ dinh dưỡng cho phụ nữ đang điều trị hiếm muộn",
     excerpt: "Những thực phẩm nên và không nên ăn trong quá trình điều trị...",
-    image: "/dist/anhchofehiemmuon/isha.jpg",
+    image: "/anhchofehiemmuon/isha.jpg",
     date: "01/06/2025"
   }
 ];
