@@ -78,7 +78,7 @@ const RegisterPage = () => {
         <Header></Header>
     <div className="min-h-screen flex flex-col md:flex-row">
       <div className="hidden md:block md:w-1/2 bg-blue-600">
-        <div className="h-full w-full bg-[url('/src/assets/xxx.jpg')] bg-cover bg-center relative">
+        <div className="h-full w-full bg-[url('/dist/anhchofehiemmuon/DR_ Romantic.jpg')] bg-cover bg-center relative">
           <div className="absolute inset-0 bg-blue-900/40 flex flex-col justify-center items-center text-white p-12">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
