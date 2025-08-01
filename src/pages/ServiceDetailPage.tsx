@@ -18,7 +18,7 @@ const servicesData = [
     id: 1,
     title: "Thụ tinh trong tử cung (IUI)",
     tagline: "Phương pháp điều trị hiếm muộn đơn giản, ít xâm lấn",
-    heroImage: "/src/assets/xxx.jpg",
+    heroImage: "/public/anhchofehiemmuon/chitietdichvu.jpg",
     description: `
       <p>Thụ tinh trong tử cung (Intrauterine Insemination - IUI) là phương pháp hỗ trợ sinh sản cơ bản, trong đó tinh trùng đã được xử lý sẽ được đưa trực tiếp vào tử cung của người phụ nữ để tăng cơ hội thụ thai.</p>
       
@@ -30,9 +30,9 @@ const servicesData = [
     reviewCount: 56,
     successRate: "15-20%",
     gallery: [
-      "/src/assets/xxx.jpg",
-      "/src/assets/xxx.jpg",
-      "/src/assets/xxx.jpg"
+      "/public/anhchofehiemmuon/chitietdichvu.jpg",
+      "/public/anhchofehiemmuon/chitietdichvu.jpg",
+      "/public/anhchofehiemmuon/chitietdichvu.jpg"
     ],
     indications: [
       "Bất thường về tinh trùng nhẹ đến trung bình",
@@ -85,7 +85,7 @@ const servicesData = [
       {
         id: 1,
         name: "Nguyễn Thị A",
-        avatar: "/src/assets/xxx.jpg",
+        avatar: "/public/anhchofehiemmuon/chitietdichvu.jpg",
         rating: 5,
         date: "10/05/2025",
         comment: "Tôi đã thành công có thai sau 2 lần IUI tại FertilityCare. Đội ngũ y bác sĩ rất tận tình, chu đáo và luôn giải đáp mọi thắc mắc của tôi. Cảm ơn bác sĩ và toàn bộ nhân viên rất nhiều!"
@@ -93,7 +93,7 @@ const servicesData = [
       {
         id: 2,
         name: "Trần Văn B",
-        avatar: "/src/assets/xxx.jpg",
+        avatar: "/public/anhchofehiemmuon/chitietdichvu.jpg",
         rating: 4,
         date: "15/04/2025",
         comment: "Vợ chồng tôi đã trải qua 3 chu kỳ IUI và thành công ở lần thứ 3. Quy trình chuyên nghiệp, bác sĩ giải thích rất rõ ràng về từng bước và luôn động viên tinh thần chúng tôi."
@@ -105,7 +105,7 @@ const servicesData = [
     id: 2,
     title: "Thụ tinh trong ống nghiệm (IVF)",
     tagline: "Phương pháp điều trị hiếm muộn hiện đại, hiệu quả cao",
-    heroImage: "/src/assets/xxx.jpg",
+    heroImage: "/public/anhchofehiemmuon/chitietdichvu.jpg",
     description: `
       <p>Thụ tinh trong ống nghiệm (In Vitro Fertilization - IVF) là phương pháp điều trị hiếm muộn hiện đại, trong đó trứng được lấy ra khỏi buồng trứng và thụ tinh với tinh trùng trong phòng thí nghiệm. Sau đó, phôi được nuôi cấy và chuyển vào tử cung.</p>
       
@@ -117,9 +117,9 @@ const servicesData = [
     reviewCount: 124,
     successRate: "40-50%",
     gallery: [
-      "/src/assets/xxx.jpg",
-      "/src/assets/xxx.jpg",
-      "/src/assets/xxx.jpg"
+      "/public/anhchofehiemmuon/chitietdichvu.jpg",
+      "/public/anhchofehiemmuon/chitietdichvu.jpg",
+      "/public/anhchofehiemmuon/chitietdichvu.jpg"
     ],
     indications: [
       "Tắc nghẽn hoặc tổn thương ống dẫn trứng",
@@ -181,7 +181,7 @@ const servicesData = [
       {
         id: 1,
         name: "Lê Thị C",
-        avatar: "/src/assets/xxx.jpg",
+        avatar: "/public/anhchofehiemmuon/chitietdichvu.jpg",
         rating: 5,
         date: "20/03/2025",
         comment: "Sau 7 năm mong mỏi có con, chúng tôi đã thành công với IVF tại FertilityCare. Đội ngũ y bác sĩ rất tận tâm, chuyên nghiệp và luôn đồng hành cùng chúng tôi trong suốt quá trình. Giờ đây chúng tôi đã có một bé gái kháu khỉnh!"
@@ -189,7 +189,7 @@ const servicesData = [
       {
         id: 2,
         name: "Phạm Văn D",
-        avatar: "/src/assets/xxx.jpg",
+        avatar: "/public/anhchofehiemmuon/chitietdichvu.jpg",
         rating: 5,
         date: "05/02/2025",
         comment: "Vợ chồng tôi đã thử IUI không thành công và chuyển sang IVF. May mắn thành công ngay lần đầu tiên. Cơ sở vật chất hiện đại, quy trình chuyên nghiệp, bác sĩ tận tâm và am hiểu chuyên môn. Xin cảm ơn cả đội ngũ FertilityCare!"

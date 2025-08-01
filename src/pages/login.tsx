@@ -60,7 +60,7 @@ const LoginPage = () => {
     <div className="min-h-screen flex flex-col md:flex-row">
       {/* Left side image */}
       <div className="hidden md:block md:w-1/2 bg-blue-600">
-        <div className="h-full w-full bg-[url('/src/assets/vvv.webp')] bg-cover bg-center relative">
+        <div className="h-full w-full bg-[url('/public/anhchofehiemmuon/welcomequaytrolai1.jpg')] bg-cover bg-center relative">
           <div className="absolute inset-0 bg-blue-900/40 flex flex-col justify-center items-center text-white p-12">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
