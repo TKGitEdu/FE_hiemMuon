@@ -2,7 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { bookingApi, cancelUpdateBooking } from '../../api/patientApi/bookingAPI';
 import type { Booking, Slot } from '../../api/patientApi/bookingAPI';
-import { bookingApiForBookingPage } from '../../api/patientApi/bookingApiForBookingPage';
+// import { bookingApiForBookingPage } from '../../api/patientApi/bookingApiForBookingPage';
 
 const AppointmentDetail = () => {
   const { bookingId } = useParams<{ bookingId: string }>();

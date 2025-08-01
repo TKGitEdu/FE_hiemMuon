@@ -3,7 +3,7 @@ import { useForm, Controller } from "react-hook-form";
 import { motion } from "framer-motion";
 import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { CalendarDays, Clock, User, Phone, Mail, FileText, CheckCircle, Loader2 } from "lucide-react";
+import { CalendarDays,  User, Phone, Mail, FileText, CheckCircle, Loader2 } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Link, useNavigate } from "react-router-dom";
 import { bookingApiForBookingPage} from "../api/patientApi/bookingApiForBookingPage";
@@ -31,7 +31,7 @@ const BookingPage = () => {
   const [bookingId, setBookingId] = useState("");
   const [services, setServices] = useState<Service[]>([]);
   const [doctors, setDoctors] = useState<Doctor[]>([]);
-  const [slots, setSlots] = useState<Slot[]>([]);
+  // const [slots, setSlots] = useState<Slot[]>([]);
   const [availableSlots, setAvailableSlots] = useState<Slot[]>([]);
   const [loading, setLoading] = useState({
     services: true,
@@ -94,7 +94,7 @@ const BookingPage = () => {
     control,
     watch,
     setValue,
-    formState: { errors, isValid }
+    formState: { errors }
   } = useForm<FormData>({
     defaultValues: {
       serviceId: "",
@@ -190,7 +190,7 @@ const dateString = data.appointmentDate
 
   const selectedService = services.find(service => service.serviceId === selectedServiceId);
   const selectedDoctor = doctors.find(doctor => doctor.doctorId === selectedDoctorId);
-  const selectedSlot = availableSlots.find(slot => slot.slotId === selectedSlotId);
+  // const selectedSlot = availableSlots.find(slot => slot.slotId === selectedSlotId);
   const userInfoSet = useRef(false);
 
   useEffect(() => {
@@ -202,7 +202,7 @@ const dateString = data.appointmentDate
           if (userInfo.fullName) setValue("fullName", userInfo.fullName);
           if (userInfo.email) setValue("email", userInfo.email);
           if (userInfo.phone) setValue("phone", userInfo.phone);
-        } catch (e) {
+        } catch {
           // Nếu lỗi parse thì bỏ qua
         }
       }

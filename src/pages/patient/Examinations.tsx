@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { format } from "date-fns";
 import { Button } from "../../components/ui/button";
@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const ExaminationsPage: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const [loading, setLoading] = useState<boolean>(false);
+  const [loading] = useState<boolean>(false);
   
   // Lấy dữ liệu examination từ state của location (được truyền từ Dashboard)
   const examination = location.state?.examination as Examination | undefined;
@@ -40,7 +40,7 @@ const ExaminationsPage: React.FC = () => {
     try {
       const date = new Date(dateString);
       return format(date, "dd/MM/yyyy HH:mm");
-    } catch (e) {
+    } catch  {
       return dateString;
     }
   };

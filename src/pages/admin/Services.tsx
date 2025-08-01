@@ -83,10 +83,10 @@ export default function AdminServices() {
   };
 
   // Gọi khi chọn dropdown trạng thái
-  const handleStatusSelect = (service: Service, newStatus: string) => {
-    const normalizedStatus = newStatus.toLowerCase() === "active" ? "Active" : newStatus;
-    setConfirmStatus({ service, newStatus: normalizedStatus });
-  };
+  // const handleStatusSelect = (service: Service, newStatus: string) => {
+  //   const normalizedStatus = newStatus.toLowerCase() === "active" ? "Active" : newStatus;
+  //   setConfirmStatus({ service, newStatus: normalizedStatus });
+  // };
 
   // Xác nhận update trạng thái
   const handleConfirmStatus = async () => {

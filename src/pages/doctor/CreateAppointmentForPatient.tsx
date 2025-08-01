@@ -8,10 +8,6 @@ import {
   Calendar, 
   ArrowLeft, 
   CalendarDays, 
-  Clock, 
-  User, 
-  Phone, 
-  Mail, 
   FileText, 
   CheckCircle, 
   Loader2 

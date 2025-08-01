@@ -2,10 +2,8 @@ import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { 
-  CalendarCheck, 
   CheckCircle, 
   Clock, 
-  Stethoscope, 
   ThumbsUp, 
   Users, 
   ArrowRight, 

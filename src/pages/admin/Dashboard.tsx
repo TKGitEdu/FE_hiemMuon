@@ -6,10 +6,10 @@ import {
   UserCog,
   Stethoscope,
   Wallet,
-  LineChart,
+  
   Calendar,
   Clock,
-  StarIcon,
+  
   ArrowRight,
   ArrowUp,
   ArrowDown,

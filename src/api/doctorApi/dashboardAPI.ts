@@ -1,6 +1,6 @@
 import axios from "axios";
 // Định nghĩa lại các interface cần thiết (nếu muốn mở rộng hoặc dùng riêng cho dashboard)
-import type { Booking, Doctor,Patient, Payment, Service, Slot, Examination } from "../patientApi/bookingAPI"; // Giả sử bạn đã có bookingAPI.ts định nghĩa Booking
+import type { Booking, Doctor,Patient, Payment, Service, Slot } from "../patientApi/bookingAPI"; // Giả sử bạn đã có bookingAPI.ts định nghĩa Booking
 export interface BookingDashboard {
   bookingId: string;
   patientId: string;

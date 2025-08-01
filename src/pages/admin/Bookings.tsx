@@ -21,15 +21,15 @@ const Bookings: React.FC = () => {
     fetchBookings();
   }, []);
 
-  const handleCancel = async (bookingId: string) => {
-    if (!window.confirm("Bạn có chắc muốn hủy lịch hẹn này?")) return;
-    try {
-      await BookingAPI.cancelBooking(bookingId);
-      setBookings((prev) => prev.filter((b) => b.bookingId !== bookingId));
-    } catch {
-      alert("Hủy lịch hẹn thất bại!");
-    }
-  };
+  // const handleCancel = async (bookingId: string) => {
+  //   if (!window.confirm("Bạn có chắc muốn hủy lịch hẹn này?")) return;
+  //   try {
+  //     await BookingAPI.cancelBooking(bookingId);
+  //     setBookings((prev) => prev.filter((b) => b.bookingId !== bookingId));
+  //   } catch {
+  //     alert("Hủy lịch hẹn thất bại!");
+  //   }
+  // };
 
   if (loading) return (
     <div className="flex justify-center items-center h-screen bg-gradient-to-br from-blue-50 to-purple-100">

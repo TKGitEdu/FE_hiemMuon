@@ -2,16 +2,12 @@ import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { 
-  Calendar, 
-  User, 
-  Tag, 
+  Calendar,  
   MessageCircle, 
-  Share2, 
   Facebook, 
   Twitter, 
   Linkedin, 
   ChevronLeft, 
-  ChevronRight,
   Clock,
   ArrowRight
 } from "lucide-react";

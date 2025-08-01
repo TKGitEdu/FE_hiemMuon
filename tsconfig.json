@@ -6,6 +6,8 @@
   ],
   "compilerOptions": {
     "baseUrl": ".",
+    "strict": true,
+    "noEmitOnError": true,
     "paths": {
       "@/*": ["./src/*"]
     }

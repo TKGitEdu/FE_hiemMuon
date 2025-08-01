@@ -22,7 +22,7 @@ import PatientAppointments from "../pages/patient/Appointments";
 import PatientTreatments from "../pages/patient/Treatments";
 import PatientProfile from "../pages/patient/Profile";
 import PatientFeedback from "../pages/patient/Feedback";
-import PatientPayments from "../pages/patient/Payments";
+// import PatientPayments from "../pages/patient/Payments";
 import DoctorDashboard from "../pages/doctor/Dashboard";
 import DoctorAppointments from "../pages/doctor/Appointments";
 import DoctorPatients from "../pages/doctor/Patients";

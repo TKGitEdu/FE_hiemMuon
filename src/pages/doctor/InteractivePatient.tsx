@@ -18,6 +18,7 @@ import type {
 
 interface PatientDisplay extends PatientType {
   age?: number;
+  medicalHistory?: string[];
 }
 
 interface BookingDisplay extends BookingType {
@@ -142,55 +143,67 @@ const InteractivePatient: React.FC = () => {
   }, [bookingId]);
   
   const handleCompleteExamination = async () => {
+  try {
+    setSubmitting(true);
+
+    if (!booking || !bookingId || !examinationDescription) {
+      alert("Vui lòng nhập mô tả khám bệnh!");
+      setSubmitting(false);
+      return;
+    }
+
     try {
-      setSubmitting(true);
-      
-      if (!booking || !bookingId || !examinationDescription) {
-        alert("Vui lòng nhập mô tả khám bệnh!");
-        setSubmitting(false);
+      const hasExamination = await checkExaminationExists(bookingId);
+      if (hasExamination) {
+        alert("Bệnh nhân đã được khám cho lịch hẹn này!\n\nVui lòng tạo lịch hẹn mới để có thể khám tiếp.");
+        navigate(`/doctor/create-appointment?patientId=${booking.patientId}`);
         return;
       }
-      
-      try {
-        const hasExamination = await checkExaminationExists(bookingId);
-        if (hasExamination) {
-          alert("Bệnh nhân đã được khám cho lịch hẹn này!\n\nVui lòng tạo lịch hẹn mới để có thể khám tiếp.");
-          navigate(`/doctor/create-appointment?patientId=${booking.patientId}`);
-          return;
-        }
-      } catch (error) {
-        console.error("Error double-checking examination exists:", error);
-      }
-      
-      const examinationData: ExaminationRequest = {
-        bookingId: bookingId,
-        examinationDate: new Date().toISOString(),
-        examinationDescription: examinationDescription.trim(),
-        result: examinationResult.trim() || "",
-        status: "completed",
-        note: specialNote.trim() || ""
-      };
-      
-      console.log("Preparing to send examination data:", examinationData);
-      
-      const response = await createExamination(examinationData);
-      console.log("Created examination:", response);
-      
-      alert("Đã hoàn thành khám bệnh thành công!");
-      navigate("/doctor/dashboard");
-    } catch (error: any) {
-      console.error("Error completing examination:", error);
-      
-      if (error.response?.status === 400 || error.response?.data?.message?.includes("examination")) {
-        alert("Bệnh nhân đã được khám cho lịch hẹn này!\n\nVui lòng tạo lịch hẹn mới để có thể khám tiếp.");
-        navigate(`/doctor/create-appointment?patientId=${booking?.patientId}`);
-      } else {
-        alert("Không thể hoàn thành khám bệnh. Vui lòng thử lại.");
-      }
-    } finally {
-      setSubmitting(false);
+    } catch (error: unknown) {
+      console.error("Error double-checking examination exists:", error);
     }
-  };
+
+    const examinationData: ExaminationRequest = {
+      bookingId: bookingId,
+      examinationDate: new Date().toISOString(),
+      examinationDescription: examinationDescription.trim(),
+      result: examinationResult.trim() || "",
+      status: "completed",
+      note: specialNote.trim() || ""
+    };
+
+    console.log("Preparing to send examination data:", examinationData);
+
+    const response = await createExamination(examinationData);
+    console.log("Created examination:", response);
+
+    alert("Đã hoàn thành khám bệnh thành công!");
+    navigate("/doctor/dashboard");
+  } catch (error: unknown) {
+    console.error("Error completing examination:", error);
+
+    // Kiểm tra kiểu trước khi truy cập thuộc tính
+    if (
+    typeof error === "object" &&
+    error !== null &&
+    "response" in error &&
+    typeof (error as { response?: unknown }).response === "object"
+  ) {
+    const response = (error as { response: { status?: number; data?: { message?: string } } }).response;
+    if (
+      response.status === 400 ||
+      (response.data?.message && response.data.message.includes("examination"))
+    ) {
+      alert("Bệnh nhân đã được khám cho lịch hẹn này!\n\nVui lòng tạo lịch hẹn mới để có thể khám tiếp.");
+      navigate(`/doctor/create-appointment?patientId=${booking?.patientId}`);
+      return;
+    }
+  }
+    alert("Không thể hoàn thành khám bệnh. Vui lòng thử lại.");
+  } finally {
+    setSubmitting(false);
+  }
+};
   
   const handleCancel = () => {
     const confirmCancel = window.confirm("Bạn có chắc muốn hủy? Các thông tin đã nhập sẽ không được lưu.");

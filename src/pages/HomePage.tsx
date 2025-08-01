@@ -2,19 +2,16 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { 
   ClipboardCheck, 
-  UserRound, 
-  CalendarClock, 
-  Award, 
   ActivitySquare, 
   BellRing, 
   ArrowRight,
   Star
 } from "lucide-react";
 import { Button } from "../components/ui/button";
-import FeaturesSection from "../components/feature";
-import Footer from "../components/footer";
+// import FeaturesSection from "../components/feature";
+// import Footer from "../components/footer";
 import Header from "../components/header";
-import HeroSection from "../components/HeroSection";
+// import HeroSection from "../components/HeroSection";
 import { useAuth } from "../contexts/AuthContext";
 
 // Giả lập dữ liệu dịch vụ
