@@ -169,7 +169,7 @@ const HomePage: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <img 
-                src="/dist/anhchofehiemmuon/welcomequaytrolai1.jpg" 
+                src="/anhchofehiemmuon/welcomequaytrolai1.jpg" 
                 alt="Happy family" 
                 className="rounded-xl shadow-2xl w-full h-auto"
               />
@@ -367,7 +367,7 @@ const HomePage: React.FC = () => {
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
                   <img 
-                    src="/dist/anhchofehiemmuon/isha.jpg" 
+                    src="/anhchofehiemmuon/isha.jpg" 
                     alt="Avatar"
                     className="w-full h-full object-cover"
                   />
@@ -386,7 +386,7 @@ const HomePage: React.FC = () => {
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
                   <img 
-                    src="/dist/anhchofehiemmuon/isha.jpg" 
+                    src="/anhchofehiemmuon/isha.jpg" 
                     alt="Avatar"
                     className="w-full h-full object-cover"
                   />

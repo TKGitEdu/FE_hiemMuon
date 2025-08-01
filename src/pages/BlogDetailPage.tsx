@@ -61,12 +61,12 @@ const blogsData = [
       
       <p>Mặc dù các phương pháp tự nhiên này có thể giúp cải thiện khả năng sinh sản, nhưng nếu bạn đã cố gắng có thai trong hơn một năm (hoặc sáu tháng nếu bạn trên 35 tuổi) mà không thành công, bạn nên tham khảo ý kiến bác sĩ chuyên khoa. Các vấn đề y tế tiềm ẩn có thể cần được điều trị bằng các phương pháp y học hiện đại.</p>
     `,
-    image: "/dist/assets/xxx.jpg",
+    image: "/assets/xxx.jpg",
     date: "10/06/2025",
     readTime: "5 phút",
     author: {
       name: "BS. Nguyễn Văn A",
-      avatar: '/dist/anhchofehiemmuon/isha5.jpg',
+      avatar: '/anhchofehiemmuon/isha5.jpg',
       bio: "Bác sĩ chuyên khoa Sản phụ khoa với hơn 15 năm kinh nghiệm trong lĩnh vực sức khỏe sinh sản."
     },
     category: "Sức khỏe sinh sản",
@@ -75,14 +75,14 @@ const blogsData = [
       {
         id: 1,
         name: "Nguyễn Thị X",
-        avatar: "/dist/anhchofehiemmuon/isha4.jpg",
+        avatar: "/anhchofehiemmuon/isha4.jpg",
         date: "12/06/2025",
         content: "Bài viết rất bổ ích, tôi đã áp dụng chế độ ăn uống và tập luyện như bài viết gợi ý và thấy sức khỏe của mình cải thiện rõ rệt."
       },
       {
         id: 2,
         name: "Trần Văn Y",
-        avatar: "/dist/anhchofehiemmuon/isha6.jpg",
+        avatar: "/anhchofehiemmuon/isha6.jpg",
         date: "11/06/2025",
         content: "Tôi không biết rằng stress có thể ảnh hưởng nhiều đến khả năng sinh sản như vậy. Cảm ơn bác sĩ đã chia sẻ thông tin quý giá."
       }
@@ -158,12 +158,12 @@ const blogsData = [
       
       <p>Nếu bạn đang cân nhắc điều trị IVF, hãy tham khảo ý kiến bác sĩ chuyên khoa để được tư vấn cụ thể về tình trạng của bạn.</p>
     `,
-    image: "/dist/assets/xxx.jpg",
+    image: "/assets/xxx.jpg",
     date: "05/06/2025",
     readTime: "8 phút",
     author: {
       name: "TS. Trần Thị B",
-        avatar: "/dist/anhchofehiemmuon/isha.jpg",
+        avatar: "/anhchofehiemmuon/isha.jpg",
       bio: "Tiến sĩ Y khoa, chuyên gia IVF với hơn 20 năm kinh nghiệm trong lĩnh vực hỗ trợ sinh sản."
     },
     category: "IVF",
@@ -172,21 +172,21 @@ const blogsData = [
       {
         id: 1,
         name: "Lê Thị M",
-        avatar: "/dist/anhchofehiemmuon/isha5.jpg",
+        avatar: "/anhchofehiemmuon/isha5.jpg",
         date: "07/06/2025",
         content: "Bài viết rất chi tiết và dễ hiểu. Tôi đang chuẩn bị bắt đầu quy trình IVF và bài viết này đã giúp tôi hiểu rõ hơn về những gì sắp diễn ra."
       },
       {
         id: 2,
         name: "Phạm Văn N",
-        avatar: "/dist/anhchofehiemmuon/isha2.jpg",
+        avatar: "/anhchofehiemmuon/isha2.jpg",
         date: "06/06/2025",
         content: "Cảm ơn bác sĩ đã chia sẻ thông tin chi tiết. Tôi có thắc mắc là liệu có thể thực hiện IVF mà không cần kích thích buồng trứng không?"
       },
       {
         id: 3,
         name: "TS. Trần Thị B",
-        avatar: "/dist/anhchofehiemmuon/isha3.jpg",
+        avatar: "/anhchofehiemmuon/isha3.jpg",
         date: "06/06/2025",
         content: "Cảm ơn anh Phạm Văn N đã quan tâm. Có, điều này được gọi là IVF tự nhiên, khi chúng tôi chỉ lấy một trứng trong chu kỳ tự nhiên của người phụ nữ. Tuy nhiên, phương pháp này có tỷ lệ thành công thấp hơn và thường chỉ được khuyến nghị trong một số trường hợp cụ thể. Anh có thể đặt lịch tư vấn để chúng tôi thảo luận chi tiết hơn về trường hợp của anh."
       }
