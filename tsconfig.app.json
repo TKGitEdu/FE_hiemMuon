@@ -31,5 +31,5 @@
         "./src/*"
       ]
     },
-  "include": ["src", "public/assets"]
+  "include": ["src", "public/assets", "public/assets"]
 }
