@@ -354,7 +354,7 @@ export default function ComponentTrackingTRM() {
               const nextDate = plan.endDate
                 ? new Date(plan.endDate).toLocaleDateString("vi-VN")
                 : "Chưa xác định";
-              const notes = plan.treatmentProcesses?.[0]?.result || "Không có ghi chú";
+              const notes = plan.ghiChu || "Không có ghi chú";
               const isNoteLong = notes.length > 100;
 
               const relatedBooking = bookings.find(
@@ -470,16 +470,16 @@ export default function ComponentTrackingTRM() {
 
                   <div className="flex justify-between items-center mt-3">
                   {relatedBooking?.status.toLowerCase() === "cancelled" && (
-                    <span className="text-xs text-red-500 font-medium">Lịch hẹn đã hủy</span>
+                    <span className="text-xs text-red-500 font-medium">Booing lịch hẹn đã hủy</span>
                   )}
                   {relatedBooking?.status.toLowerCase() === "pending" && (
-                    <span className="text-xs text-yellow-500 font-medium">Chờ xác nhận</span>
+                    <span className="text-xs text-yellow-500 font-medium">Booking chờ xác nhận</span>
                   )}
                   {relatedBooking?.status.toLowerCase() === "in-progress" && (
-                    <span className="text-xs text-blue-500 font-medium">Đang tiến hành</span>
+                    <span className="text-xs text-blue-500 font-medium">Booking đang tiến hành</span>
                   )}
                   {relatedBooking?.status.toLowerCase() === "completed" && (
-                    <span className="text-xs text-green-500 font-medium">Hoàn thành</span>
+                    <span className="text-xs text-green-500 font-medium">Booking đã hoàn thành</span>
                   )}
                   <Link
                       to={relatedBooking?.status.toLowerCase() === "cancelled" ? "#" : `/patient/treatments/${plan.treatmentPlanId}`}
