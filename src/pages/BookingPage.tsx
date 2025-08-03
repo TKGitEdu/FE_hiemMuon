@@ -175,7 +175,7 @@ const dateString = data.appointmentDate
       setLoading(prev => ({ ...prev, booking: false }));
     } catch (err) {
       console.error("Error creating booking:", err);
-      setError(prev => ({ ...prev, booking: "Đã xảy ra lỗi khi đặt lịch. Lịch hẹn đã được đặt trước." }));
+      setError(prev => ({ ...prev, booking: "Lịch hẹn đã được đặt trước." }));
       setLoading(prev => ({ ...prev, booking: false }));
     }
   };
