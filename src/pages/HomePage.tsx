@@ -92,6 +92,17 @@ const blogs = [
   }
 ];
 
+const accountTest = [
+  { username: "patient1", password: "Patient@123" },
+  { username: "patient2", password: "Patient@123" },
+  { username: "patient3", password: "Patient@123" },
+  { username: "doctor1", password: "Doctor@123" },
+  { username: "doctor2", password: "Doctor@123" },
+  { username: "doctor3", password: "Doctor@123" },
+  { username: "admin", password: "admin123" }
+];
+
+
 const HomePage: React.FC = () => {
   const { isAuthenticated, user } = useAuth();
   const userRole = localStorage.getItem('userRole');
@@ -141,6 +152,17 @@ const HomePage: React.FC = () => {
               ) : (
                 // Hiển thị nội dung mặc định cho người dùng chưa đăng nhập
                 <div>
+                  <div className="mb-4 p-4 bg-yellow-50 rounded shadow">
+                    <p className="font-semibold mb-2">Tài khoản test:</p>
+                    <ul>
+                      {accountTest.map(acc => (
+                        <li key={acc.username}>
+                          <span className="font-mono">{acc.username}</span> 
+                          / <span className="font-mono">{acc.password}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    </div>
                   <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                     Mang lại cơ hội làm cha mẹ cho mọi gia đình
                   </h1>
